@@ -1,0 +1,31 @@
+{
+  "name": "my-portfolio",
+  "version": "1.0.0",
+  "description": "Faddi's Portfolio",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FaddiADabain/My-Portfolio.git"
+  },
+  "keywords": [
+    "portfolio"
+  ],
+  "author": "Faddi Dabain",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FaddiADabain/My-Portfolio/issues"
+  },
+  "homepage": "https://github.com/FaddiADabain/My-Portfolio#readme",
+  "dependencies": {
+    "@vitejs/plugin-react": "^4.3.0",
+    "express": "^4.19.2",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "vite": "^5.2.11"
+  }
+}
