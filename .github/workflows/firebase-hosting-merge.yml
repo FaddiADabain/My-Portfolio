@@ -20,6 +20,11 @@ jobs:
           cd vite-project
           npm install
 
+      - name: Delete Dist Build Cache
+        run: |
+          cd vite-project
+          rm -rf build dist
+
       - name: Build the project
         run: |
           cd vite-project
