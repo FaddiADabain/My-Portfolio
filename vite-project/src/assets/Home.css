@@ -1,0 +1,75 @@
+.backdrop {
+    margin-top: 80px;
+    background-color: #046A38;
+    border-radius: 20px;
+    padding: 20px;
+    color: #fff; /* Text color for better readability */
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.about-us-pic {
+    max-width: 20%;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 20px;
+}
+
+.my-name {
+    font-size: 2.5rem;
+    margin: 10px auto;
+}
+
+.about-us-title {
+    font-size: 2rem;
+}
+
+.section-title {
+    font-size: 1.5rem;
+}
+
+.section-text {
+    margin: 20px 0;
+    text-indent: 20px;
+    text-align: left;
+    font-size: large;
+}
+
+.skills-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 0 20px 0;
+    text-align: left;
+    display: inline-block;
+}
+
+.section-divider {
+    width: 90%;
+    border: 1px solid #ffffff;
+    margin: 50px auto;
+}
+
+@media (max-width: 768px) {
+    .about-us-pic {
+        max-width: 50%;
+    }
+
+    .content {
+        flex-direction: column;
+        align-items: center; /* Ensures everything is centered on smaller screens */
+    }
+
+    .about-us-title, .my-name {
+        margin-top: 20px;
+        font-size: 1.5rem; /* Adjust title size for smaller screens */
+    }
+
+    .section-text {
+        font-size: 1.3rem; /* Adjusts the paragraph text size to be more readable */
+    }
+}

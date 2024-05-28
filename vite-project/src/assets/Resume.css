@@ -1,0 +1,19 @@
+.resume-container {
+    width: 90%;
+    margin: 75px auto 0 auto;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .resume-container {
+        width: 100%;
+        padding: 10px;
+    }
+}
