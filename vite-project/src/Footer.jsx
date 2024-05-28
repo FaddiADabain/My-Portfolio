@@ -14,7 +14,7 @@ function Footer() {
           <a href="https://www.linkedin.com/in/faddi-dabain-556698171/" target="_blank" rel="noopener noreferrer" className="footer-link">LinkedIn</a>
         </div>
         <div className="additional-resources footer-item">
-          <a href="/resume.pdf" target="_blank" className="footer-link">Resume</a>
+          <a href="/resume" target="_blank" className="footer-link">Resume</a>
         </div>
       </div>
       <div className="footer-bottom">
