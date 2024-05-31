@@ -13,12 +13,12 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '18' # Use Node.js version 18 or higher
+          node-version: '18'
 
       - name: Install dependencies
         run: |
           cd vite-project
-          npm install
+          npm ci --ignore-scripts
 
       - name: Delete Dist Build Cache
         run: |
