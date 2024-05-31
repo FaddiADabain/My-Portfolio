@@ -22,15 +22,22 @@
   },
   "homepage": "https://github.com/FaddiADabain/My-Portfolio#readme",
   "dependencies": {
+    "@google-cloud/secret-manager": "^5.6.0",
     "@react-pdf-viewer/core": "^3.12.0",
     "@react-pdf-viewer/default-layout": "^3.12.0",
     "@react-pdf/renderer": "^3.4.4",
     "@vitejs/plugin-react": "^4.3.0",
+    "cors": "^2.8.5",
     "express": "^4.19.2",
     "firebase": "^10.12.2",
+    "firebase-admin": "^12.1.1",
+    "firebase-functions": "^5.0.1",
+    "openai": "^4.47.2",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-router-dom": "^6.23.1",
-    "vite": "^5.2.11"
+    "vite": "^5.2.12",
+    "flask": "^2.0.3", 
+    "flask-cors": "^3.0.10"
   }
 }
