@@ -36,7 +36,7 @@ app = Flask(__name__)
 CORS(app)  # Enable CORS for all routes
 
 # Directory where PDFs are stored
-PDF_DIRECTORY = './pdfs'
+PDF_DIRECTORY = '.'
 
 # Function to read PDF content
 def read_pdf_content(file_path):
