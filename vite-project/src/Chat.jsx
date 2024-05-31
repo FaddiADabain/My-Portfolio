@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import './assets/Chat.css';
 import chatLogo from './assets/chat.png';
 
@@ -8,15 +8,19 @@ function Chat() {
     const [isOpen, setIsOpen] = useState(false);
     const [chatText, setChatText] = useState('');
     const [messages, setMessages] = useState([]);
+    const chatEndRef = useRef(null);
 
     useEffect(() => {
-        // Add an initial bot message when the component mounts
         const initialBotMessage = {
             text: 'I am ChatGPT 4! I will be answering any questions you have about Faddi today. If you need any personal responses please feel free to email me at: fdabain01@manhattan.edu.',
             sender: 'bot'
         };
         setMessages([initialBotMessage]);
     }, []);
+
+    useEffect(() => {
+        chatEndRef.current?.scrollIntoView({ behavior: 'smooth' });
+    }, [messages]);
 
     const toggleMenu = () => {
         setIsOpen(!isOpen);
@@ -31,14 +35,13 @@ function Chat() {
     };
 
     const handleFormSubmit = async (event) => {
-        event.preventDefault(); // Prevent the form from submitting and causing a page reload
+        event.preventDefault();
         if (chatText.trim() !== '') {
             const userMessage = { text: chatText, sender: 'user' };
             const botThinkingMessage = { text: '...', sender: 'bot' };
-            setMessages([...messages, userMessage, botThinkingMessage]); // Add user message and bot thinking message
-            setChatText(''); // Clear the input field after logging
+            setMessages([...messages, userMessage, botThinkingMessage]);
+            setChatText('');
 
-            // Call the Firebase function
             try {
                 const response = await fetch(FIREBASE_FUNCTION_URL, {
                     method: 'POST',
@@ -50,15 +53,12 @@ function Chat() {
 
                 if (response.ok) {
                     const data = await response.json();
-                    const updatedMessages = [...messages, userMessage, { text: data.response, sender: 'bot' }];
-                    setMessages(updatedMessages);
+                    setMessages(prevMessages => prevMessages.slice(0, -1).concat({ text: data.response, sender: 'bot' }));
                 } else {
-                    const updatedMessages = [...messages, userMessage, { text: 'Error: Failed to get a response from the server.', sender: 'bot' }];
-                    setMessages(updatedMessages);
+                    setMessages(prevMessages => prevMessages.slice(0, -1).concat({ text: 'Error: Failed to get a response from the server.', sender: 'bot' }));
                 }
             } catch (error) {
-                const updatedMessages = [...messages, userMessage, { text: 'Error: Failed to get a response from the server.', sender: 'bot' }];
-                setMessages(updatedMessages);
+                setMessages(prevMessages => prevMessages.slice(0, -1).concat({ text: 'Error: Failed to get a response from the server.', sender: 'bot' }));
             }
         }
     };
@@ -78,6 +78,7 @@ function Chat() {
                             {message.text}
                         </div>
                     ))}
+                    <div ref={chatEndRef}></div>
                 </div>
 
                 <form onSubmit={handleFormSubmit} autoComplete="off">
