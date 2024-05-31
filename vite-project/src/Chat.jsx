@@ -12,7 +12,7 @@ function Chat() {
     useEffect(() => {
         // Add an initial bot message when the component mounts
         const initialBotMessage = {
-            text: 'I am ChatGPT 4o! I will be answering any questions you have about Faddi today. If you need any personal responses please feel free to email me at: fdabain01@manhattan.edu.',
+            text: 'I am ChatGPT 4! I will be answering any questions you have about Faddi today. If you need any personal responses please feel free to email me at: fdabain01@manhattan.edu.',
             sender: 'bot'
         };
         setMessages([initialBotMessage]);
