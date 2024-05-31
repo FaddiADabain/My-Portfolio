@@ -35,7 +35,7 @@
 
 .chat-window.open {
     width: 600px;
-    height: 700px;
+    height: 85%;
 }
 
 .chat-close {
@@ -118,7 +118,7 @@
 
     .chat-window.open {
         max-width: 97%;
-        max-height: 90%;
+        max-height: 100%;
         visibility: visible;
     }
 
