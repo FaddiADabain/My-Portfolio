@@ -12,5 +12,17 @@
         "destination": "/index.html"
       }
     ]
+  },
+  "functions": {
+    "source": "functions",
+    "codebase": "http-flask",
+    "ignore": [
+      "venv",
+      ".git",
+      "firebase-debug.log",
+      "firebase-debug.*.log",
+      "*.local"
+    ],
+    "runtime": "python312"
   }
 }
