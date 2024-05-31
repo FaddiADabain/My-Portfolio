@@ -18,6 +18,9 @@ function Chat() {
         setMessages([initialBotMessage]);
     }, []);
 
+
+    ;
+
     useEffect(() => {
         chatEndRef.current?.scrollIntoView({ behavior: 'smooth' });
     }, [messages]);
