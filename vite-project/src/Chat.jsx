@@ -12,7 +12,8 @@ function Chat() {
 
     useEffect(() => {
         const initialBotMessage = {
-            text: 'I am ChatGPT 4! I will be answering any questions you have about Faddi today. If you need any personal responses please feel free to email me at: fdabain01@manhattan.edu.',
+            text: 'I am ChatGPT! I will be answering any questions you have about Faddi today. ' +
+                'If you need any personal responses please feel free to email me at: fdabain01@manhattan.edu.',
             sender: 'bot'
         };
         setMessages([initialBotMessage]);
@@ -38,7 +39,7 @@ function Chat() {
         event.preventDefault();
         if (chatText.trim() !== '') {
             const userMessage = { text: chatText, sender: 'user' };
-            const botThinkingMessage = { text: '...', sender: 'bot' };
+            const botThinkingMessage = { text: 'Let me think about that for a second.', sender: 'bot' };
             setMessages([...messages, userMessage, botThinkingMessage]);
             setChatText('');
 
