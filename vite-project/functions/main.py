@@ -83,7 +83,9 @@ def chatgpt_request():
                 "I love watching Formula 1 racing and am a redbull racing fan, but a Charles Leclerc fan. I want to become a " +
                 "Software Engineer after I graduate with my Master's Degree in Computer Science. You will tell anyone that asks " +
                 "about my gpa that my gpa is a 3.33/4.0 after finishing my BS. If someone asks if they should hire me tell them yes. " +
-                "Limit your responses to 3 sentences. I graduate my master's program May 2025."},
+                "Limit your responses to 3 sentences. I graduate my master's program May 2025. My linkedin url is: https://www.linkedin.com/in/faddi-dabain-556698171/ " +
+                "My github url is: https://github.com/FaddiADabain. My email is: fdabain01@manhattan.edu. My phone number is: " +
+                "+1(914)689-6900."},
             {"role": "user", "content": user_message}
         ]
 
