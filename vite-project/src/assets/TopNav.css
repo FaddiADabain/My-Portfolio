@@ -42,8 +42,33 @@
 
 @media (max-width: 768px) {
     .nav-links {
+        display: none;
         flex-direction: column;
         gap: 10px;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background: #f0f0f0;
+        border-top: 2px solid #ddd;
+        z-index: 999;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .hamburger div {
+        width: 25px;
+        height: 3px;
+        background-color: #333;
+        margin: 5px;
+        transition: transform 0.3s;
     }
 
     .nav-logo {
