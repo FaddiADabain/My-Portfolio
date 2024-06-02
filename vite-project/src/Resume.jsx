@@ -10,7 +10,7 @@ const Resume = () => {
                 width="100%"
                 height="100%"
                 title="Resume"
-                style={{ border: 'none' }}
+                style={{ border: 'none', minHeight: '600px' }}
             />
         </div>
     );
