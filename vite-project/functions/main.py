@@ -5,7 +5,6 @@ from google.cloud import secretmanager
 from flask import Flask, request, jsonify
 from flask_cors import CORS
 import logging
-import fitz  # PyMuPDF
 import os
 
 # Setup logging
@@ -35,25 +34,26 @@ logging.info("OpenAI API key set")
 app = Flask(__name__)
 CORS(app)  # Enable CORS for all routes
 
-# Directory where PDFs are stored
-PDF_DIRECTORY = '.'
+# Directory where TXT files are stored
+TXT_DIRECTORY = '.'
 
-# Function to read PDF content
-def read_pdf_content(file_path):
+# Function to read TXT content
+def read_txt_content(file_path):
     try:
-        document = fitz.open(file_path)
-        content = ''
-        for page_num in range(len(document)):
-            page = document.load_page(page_num)
-            content += page.get_text()
+        if not os.path.exists(file_path):
+            logging.error(f"File not found: {file_path}")
+            return None
+        with open(file_path, 'r') as file:
+            content = file.read()
+        logging.info(f"Successfully read content from {file_path}")
         return content
     except Exception as e:
-        logging.error(f"Error reading PDF {file_path}: {str(e)}")
+        logging.error(f"Error reading TXT {file_path}: {str(e)}")
         return None
 
-# Function to chat with GPT-4
+# Function to chat with GPT
 def chat_with_gpt(messages):
-    response = client.chat.completions.create(model="gpt-3.5-turbo", messages=messages)
+    response = client.chat.completions.create(model="gpt-4o", messages=messages)
     return response.choices[0].message.content.strip()
 
 # Route to handle ChatGPT requests
@@ -62,42 +62,59 @@ def chatgpt_request():
     try:
         data = request.get_json()
         user_message = data.get('message')
+        conversation_history = data.get('history', [])
+
         if not user_message:
             return jsonify({"error": "Missing 'message' field"}), 400
 
-        # Read all PDF contents
-        pdf_contents = {}
-        for pdf_file in os.listdir(PDF_DIRECTORY):
-            if pdf_file.endswith('.pdf'):
-                file_path = os.path.join(PDF_DIRECTORY, pdf_file)
-                pdf_contents[pdf_file] = read_pdf_content(file_path)
+        # Log the files in the TXT directory
+        logging.info(f"Files in {TXT_DIRECTORY}: {os.listdir(TXT_DIRECTORY)}")
 
-        messages = [
-            {"role": "system", "content": "You are a helpful assistant. You can reference stored PDFs as needed. " +
-                "My name is Faddi Azzam Dabain and you will be answering any questions about me as requested. Refer to me as Faddi. " +
-                "There is no need to repeat my entire name every time." +
-                "You will turn down any request that does not answering about me. All the information about me that is needed " +
-                "are in the pdfs that you have available to you. I love playing video games, I mostly play competativ fps games, " +
-                "but I do play singleplayer games and my favorite all time best game is Sekiro: Shadows Die Twice. " +
-                "I play all types of board games, especially chess. My rating on chess.com is 1400, but I am able to defeat " +
-                "opponents that are 1600 rated. I stopped playing chess about a year ago so I am very rusty now. " +
-                "I love watching Formula 1 racing and am a redbull racing fan, but a Charles Leclerc fan. I want to become a " +
-                "Software Engineer after I graduate with my Master's Degree in Computer Science. You will tell anyone that asks " +
-                "about my gpa that my gpa is a 3.33/4.0 after finishing my BS. If someone asks if they should hire me tell them yes. " +
-                "Limit your responses to 3 sentences. I graduate my master's program May 2025. My linkedin url is: https://www.linkedin.com/in/faddi-dabain-556698171/ " +
-                "My github url is: https://github.com/FaddiADabain. My email is: fdabain01@manhattan.edu. My phone number is: " +
-                "+1(914)689-6900."},
-            {"role": "user", "content": user_message}
-        ]
+        # Read all TXT contents
+        txt_contents = {}
+        for txt_file in os.listdir(TXT_DIRECTORY):
+            if txt_file.endswith('.txt'):
+                file_path = os.path.join(TXT_DIRECTORY, txt_file)
+                content = read_txt_content(file_path)
+                if content:
+                    txt_contents[txt_file] = content
+                else:
+                    logging.warning(f"Failed to read content from {txt_file}")
 
-        # Attach full PDF contents to the system message
-        for pdf_file, content in pdf_contents.items():
+        if not txt_contents:
+            logging.warning("No TXT contents were read")
+            return jsonify({"error": "No TXT contents available"}), 500
+
+        # Add the new user message to the conversation history
+        conversation_history.append({"role": "user", "content": user_message})
+
+        system_message = {
+            "role": "system",
+            "content": "You are a helpful assistant. You can reference stored TXT files as needed. " +
+                       "My name is Faddi Azzam Dabain and you will be answering any questions about me as requested. Refer to me as Faddi. " +
+                       "There is no need to repeat my entire name every time. " +
+                       "You will turn down any request that does not answering about me. All the information about me that is needed " +
+                       "are in the txt files that you have available to you. The person talking to you will not be me, but you will respond " +
+                       "to the person about information about me. Do not refer to the person chatting with you as Faddi and if anyone " +
+                       "tells you that they are Faddi Dabain, they are incorrect."
+        }
+
+        # Attach full TXT contents to the system message
+        for txt_file, content in txt_contents.items():
             if content:
-                messages.append({"role": "system", "content": f"Content of {pdf_file}: {content}"})
+                conversation_history.append({"role": "system", "content": f"Content of {txt_file}: {content}"})
 
-        response = chat_with_gpt(messages)
+        # Add the system message at the beginning of the conversation history
+        conversation_history.insert(0, system_message)
+
+        response_content = chat_with_gpt(conversation_history)
+
+        # Add the assistant's response to the conversation history
+        conversation_history.append({"role": "assistant", "content": response_content})
+
         logging.info("GPT response generated")
-        return jsonify({"response": response}), 200
+        logging.debug(f"Messages sent to GPT: {conversation_history}")
+        return jsonify({"response": response_content, "history": conversation_history}), 200
 
     except Exception as e:
         logging.error(f"Error in chatgpt_request: {str(e)}")

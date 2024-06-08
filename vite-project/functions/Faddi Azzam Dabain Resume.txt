@@ -1,6 +1,8 @@
- Faddi Azzam Dabain
+Resume:
+
+Faddi Azzam Dabain
 Ossining, NY | (914)689-6900 | fdabain01@manhattan.edu | Linkedin | Github
-  EDUCATION Manhattan College
+EDUCATION Manhattan College
 Bachelor of Science in Computer Science
 Manhattan College
 Master of Science in Computer Science
@@ -12,7 +14,7 @@ Graduation Date: May 2024
 Riverdale, NY
 Graduation Date: May 2025
 Spring 2024
-  Developed a comprehensive web application facilitating user interaction with dynamic content on plants, weather, and events using Agile Methodology.
+Developed a comprehensive web application facilitating user interaction with dynamic content on plants, weather, and events using Agile Methodology.
 Implemented user authentication and data encryption using Firebase; created API calls to OpenAI for plant care information and to Unsplash for images.
 Built features including a custom event calendar, live discussion boards, and personalized weather forecasts.
 Formula1 Racing Leaderboards
