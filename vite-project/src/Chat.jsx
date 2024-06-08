@@ -40,7 +40,8 @@ function Chat() {
         if (chatText.trim() !== '') {
             const userMessage = { text: chatText, sender: 'user' };
             const botThinkingMessage = { text: 'Let me think about that for a second.', sender: 'bot' };
-            setMessages([...messages, userMessage, botThinkingMessage]);
+            const updatedMessages = [...messages, userMessage, botThinkingMessage];
+            setMessages(updatedMessages);
             setChatText('');
 
             try {
@@ -49,7 +50,13 @@ function Chat() {
                     headers: {
                         'Content-Type': 'application/json'
                     },
-                    body: JSON.stringify({ message: chatText })
+                    body: JSON.stringify({
+                        message: chatText,
+                        history: updatedMessages.map(msg => ({
+                            role: msg.sender === 'user' ? 'user' : 'assistant',
+                            content: msg.text
+                        }))
+                    })
                 });
 
                 if (response.ok) {
