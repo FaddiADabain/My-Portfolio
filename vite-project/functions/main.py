@@ -53,7 +53,7 @@ def read_pdf_content(file_path):
 
 # Function to chat with GPT-4
 def chat_with_gpt(messages):
-    response = client.chat.completions.create(model="gpt-3.5-turbo-0613", messages=messages)
+    response = client.chat.completions.create(model="gpt-3.5-turbo", messages=messages)
     return response.choices[0].message.content.strip()
 
 # Route to handle ChatGPT requests
