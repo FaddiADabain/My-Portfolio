@@ -10,7 +10,7 @@ const Resume = () => {
                 width="100%"
                 height="100%"
                 title="Resume"
-                style={{ border: 'none', minHeight: '600px' }}
+                style={{ border: 'none', minHeight: '83vh' }}
             />
         </div>
     );
