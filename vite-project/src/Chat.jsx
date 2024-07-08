@@ -72,7 +72,7 @@ function Chat() {
     };
 
     return (
-        <div>
+        <div className='chat-bubble'>
             <img className={`bubble ${isOpen ? 'open' : ''}`} onClick={toggleMenu} src={chatLogo} alt="Chat Logo" />
 
             <div className={`chat-window ${isOpen ? 'open' : ''}`}>

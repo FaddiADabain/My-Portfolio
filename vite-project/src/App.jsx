@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './Home';
+import Projects from './Projects';
 import Resume from './Resume';
 import TopNav from './TopNav';
 import Footer from './Footer';
@@ -13,6 +14,7 @@ const App = () => {
 
             <Routes>
                 <Route exact path="/" element={<Home />} />
+                <Route path="/projects" element={<Projects />} />
                 <Route path="/resume" element={<Resume />} />
             </Routes>
 

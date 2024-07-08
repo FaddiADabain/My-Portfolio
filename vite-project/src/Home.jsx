@@ -1,8 +1,6 @@
 import React from 'react';
 import './assets/Home.css';
 import defaultImg from './assets/Selfie.jpeg';
-import Footer from './Footer';
-import TopNav from './TopNav';
 
 const Home = () => {
     return (
