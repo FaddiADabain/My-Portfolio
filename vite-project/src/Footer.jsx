@@ -3,7 +3,7 @@ import './assets/Footer.css';
 
 function Footer() {
   return (
-    <footer className="footer">
+    <footer className="footer" id='footer'>
       <div className="footer-content">
         <div className="contact-info footer-item">
           <a href="mailto:fdabain01@manhattan.edu" className="footer-link">Email</a>
@@ -14,7 +14,7 @@ function Footer() {
           <a href="https://www.linkedin.com/in/faddi-dabain-556698171/" target="_blank" rel="noopener noreferrer" className="footer-link">LinkedIn</a>
         </div>
         <div className="additional-resources footer-item">
-          <a href="/resume" target="_blank" className="footer-link">Resume</a>
+          <a href="#resume" className="footer-link">Resume</a>
         </div>
       </div>
       <div className="footer-bottom">
