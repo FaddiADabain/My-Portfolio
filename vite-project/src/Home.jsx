@@ -17,7 +17,7 @@ const Home = () => {
                         </div>
                         <div className="d-flex flex-column justify-content-center align-items-center col-lg-7 col-md-7 col-12">
                             <div className="hero-text">
-                                <h1 className="hero-title">👋 Faddi Azzam Dabain, a software engineer</h1>
+                                <h1 className="hero-title">👋 Faddi Dabain, a software engineer</h1>
                                 <a href="mailto:fdabain01@manhattan.edu" className="email-link">fdabain01@manhattan.edu</a>
                             </div>
                         </div>
@@ -31,7 +31,7 @@ const Home = () => {
                     <div className="row">
                         <div className="col-lg-6 col-md-6 col-12">
                             <h3 className="mb-4">This is Faddi's Resume</h3>
-                            <p>Hello! I'm Faddi Azzam Dabain, a dedicated and innovative Computer Science professional based in 
+                            <p>Hello! I'm Faddi Dabain, a dedicated and innovative Computer Science professional based in 
                                 Ossining, New York. Currently, I am pursuing my Master of Science in Computer Science at Manhattan 
                                 College, where I previously earned my Bachelor of Science degree with a strong academic record and 
                                 notable scholarships, including the Science Scholar's Award and Founder's Award.</p>
