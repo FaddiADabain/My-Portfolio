@@ -63,9 +63,6 @@ const TopNav = () => {
                             <a href="#footer" className="nav-link smoothScroll">Contact</a>
                         </li>
                     </ul>
-                    <div className="mt-lg-0 mt-3 mb-4 mb-lg-0">
-                        <a href="./src/assets/Faddi Azzam Dabain Resume.pdf" className="custom-btn btn" download>Download CV</a>
-                    </div>
                 </div>
             </div>
         </nav>
