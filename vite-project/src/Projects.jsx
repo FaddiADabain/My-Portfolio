@@ -3,6 +3,8 @@ import './assets/Projects.css';
 import projectImg1 from './assets/images/logo.png';
 import projectImg2 from './assets/images/nnpic.png'
 import projectImg3 from './assets/images/f1image.jpg';
+import projectImg4 from './assets/images/Faddi.png';
+import projectImg5 from './assets/images/Faddi1.png';
 
 const Projects = () => {
     return (
@@ -46,7 +48,7 @@ const Projects = () => {
             </a>
 
             <a className='project-item'>
-                <img className='project-picture' src={projectImg1} alt="Project Image 4" />
+                <img className='project-picture' src={projectImg4} alt="Project Image 4" />
                 <div className='project-desc'>
                     <b>Discord Bot</b><br />
                     <span className='project-desc-txt'>
@@ -58,7 +60,7 @@ const Projects = () => {
             </a>
 
             <a className='project-item'>
-                <img className='project-picture' src={projectImg1} alt="Project Image 4" />
+                <img className='project-picture' src={projectImg5} alt="Project Image 5" />
                 <div className='project-desc'>
                     <b>F1 Blockchain</b><br />
                     <span className='project-desc-txt'>
