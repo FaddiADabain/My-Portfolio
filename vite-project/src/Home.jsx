@@ -1,8 +1,9 @@
 import React from 'react';
 import './assets/Home.css';
-import defaultImg from './assets/Selfie.jpeg';
-import gradPic from './assets/GraduationPic.jpg'
+import defaultImg from './assets/images/Selfie.jpeg';
+import gradPic from './assets/images/GraduationPic.jpg'
 import Resume from './Resume';
+import Projects from './Projects';
 
 const Home = () => {
     return (
@@ -30,7 +31,7 @@ const Home = () => {
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-6 col-md-6 col-12">
-                            <h3 className="mb-4">This is Faddi's Resume</h3>
+                            <h1 className="mb-4">This is Faddi's Resume</h1>
                             <p>Hello! I'm Faddi Dabain, a dedicated and innovative Computer Science professional based in 
                                 Ossining, New York. Currently, I am pursuing my Master of Science in Computer Science at Manhattan 
                                 College, where I previously earned my Bachelor of Science degree with a strong academic record and 
@@ -95,7 +96,11 @@ const Home = () => {
                 </div>
             </section>
 
-            <section className='resume' id='resume'>
+            <section id='projects'>
+                <Projects />
+            </section>
+
+            <section id='resume'>
                 <Resume />
             </section>
         </div>

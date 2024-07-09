@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import './assets/Chat.css';
-import chatLogo from './assets/chat.png';
+import chatLogo from './assets/images/chat.png';
 
 const FIREBASE_FUNCTION_URL = 'https://firebase-chatgpt-request-osoadq6u5q-uc.a.run.app/';
 
@@ -91,6 +91,7 @@ function Chat() {
 
                 <form onSubmit={handleFormSubmit} autoComplete="off">
                     <input
+                        for='chatinput'
                         name='chatText'
                         className='chat-text-box'
                         value={chatText}
