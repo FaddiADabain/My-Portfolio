@@ -1,75 +1,143 @@
+/* General Styling */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Backdrop */
 .backdrop {
-    margin-top: 75px;
-    background-color: #046A38;
-    border-radius: 20px;
+    background: #f5f5f5;
     padding: 20px;
     color: #fff;
 }
 
+/* Content */
 .content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    background: #046A38;
+    color: #fff;
     text-align: center;
 }
 
-.about-us-pic {
-    max-width: 20%;
-    height: auto;
-    margin-bottom: 20px;
-    border-radius: 20px;
+.hero .container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.my-name {
+.hero .hero-text {
+    max-width: 600px;
+}
+
+.hero .hero-title {
     font-size: 2.5rem;
-    margin: 10px auto;
+    margin-bottom: 20px;
 }
 
-.about-us-title {
-    font-size: 2rem;
+.hero .email-link {
+    color: black;
+    text-decoration: none;
+    font-size: 1.2rem;
 }
 
-.section-title {
+/* About Section */
+.about {
+    padding: 60px 0;
+    background: #fff;
+}
+
+.about .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.about .mb-4 {
+    margin-bottom: 1.5rem;
+}
+
+.about .profile-list {
+    list-style: none;
+    padding: 0;
+}
+
+.about .profile-list li {
+    margin-bottom: 10px;
+}
+
+.about .about-image {
+    border-radius: 10px;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Section Padding */
+.section-padding {
+    padding: 60px 0;
+}
+
+/* About Third Section */
+.about-third {
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.about-third .col-lg-4,
+.about-third .col-md-4,
+.about-third .col-12 {
+    margin-bottom: 20px;
+}
+
+.about-third h3 {
     font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+/* Other Sections */
+.section-title {
+    font-size: 2rem;
+    margin-top: 40px;
 }
 
 .section-text {
-    margin: 20px 0;
-    text-indent: 20px;
-    text-align: left;
-    font-size: large;
-}
-
-.skills-list {
-    list-style-type: none;
-    padding: 0;
-    margin: 0 0 20px 0;
-    text-align: left;
-    display: inline-block;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
 }
 
 .section-divider {
-    width: 90%;
-    border: 1px solid #ffffff;
-    margin: 50px auto;
+    border: 1px solid #ddd;
+    margin: 40px 0;
+    padding: 0 60%;
 }
 
-@media (max-width: 768px) {
-    .about-us-pic {
-        max-width: 50%;
-    }
+.skills-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
 
-    .content {
-        flex-direction: column;
-        align-items: center; /* Ensures everything is centered on smaller screens */
-    }
-
-    .about-us-title, .my-name {
-        margin-top: 20px;
-        font-size: 1.5rem; /* Adjust title size for smaller screens */
-    }
-
-    .section-text {
-        font-size: 1.3rem; /* Adjusts the paragraph text size to be more readable */
-    }
+.skills-list li {
+    margin-bottom: 10px;
 }
