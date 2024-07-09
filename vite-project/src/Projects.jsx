@@ -56,6 +56,19 @@ const Projects = () => {
                     </span>
                 </div>
             </a>
+
+            <a className='project-item'>
+                <img className='project-picture' src={projectImg1} alt="Project Image 4" />
+                <div className='project-desc'>
+                    <b>F1 Blockchain</b><br />
+                    <span className='project-desc-txt'>
+                        The F1 Blockchain project successfully recorded race results, driver stats, and team 
+                        performance on a decentralized platform. It provided real-time, immutable data and 
+                        enhanced fan engagement with tokenized collectibles, setting a new standard for 
+                        transparency and authenticity in sports data management.
+                    </span>
+                </div>
+            </a>
         </div>
     );
 };

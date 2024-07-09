@@ -44,7 +44,7 @@
     position: absolute;
     bottom: 0;
     width: 100%;
-    background-color: rgba(240, 240, 240, 0.9);
+    background-color: rgba(240, 240, 240);
     padding: 10px;
     max-height: 40px;
     overflow: hidden;
