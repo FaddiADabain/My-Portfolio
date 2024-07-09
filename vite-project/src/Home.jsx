@@ -1,7 +1,7 @@
 import React from 'react';
 import './assets/Home.css';
 import defaultImg from './assets/images/Selfie.jpeg';
-import gradPic from './assets/images/GraduationPic.jpg'
+import gradPic from './assets/images/GraduationPic.jpg';
 import Resume from './Resume';
 import Projects from './Projects';
 
@@ -23,6 +23,9 @@ const Home = () => {
                             </div>
                         </div>
                     </div>
+                </div>
+                <div className="arrow">
+                    ↓
                 </div>
             </section>
 
