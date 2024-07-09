@@ -68,8 +68,8 @@ const Home = () => {
                             ensuring optimal user experience and seamless IT operations across the campus.
                         </p>
                         <hr className="section-divider" />
-                        <h2 className='mb-4'>Technical Skills</h2>
-                        <p className='section-text' id='skills'>
+                        <h2 className='mb-4' id='skills'>Technical Skills</h2>
+                        <p className='section-text'>
                             I am proficient in a range of programming languages and technologies, including:
                         </p>
                         <ul className='skills-list'>
