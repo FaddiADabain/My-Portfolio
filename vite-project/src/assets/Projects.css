@@ -70,6 +70,11 @@
     white-space: normal;
 }
 
+.projects-header {
+    width: 100%;
+    margin: 30px auto;
+}
+
 
 @media (max-width: 768px) {
     .project-item {
