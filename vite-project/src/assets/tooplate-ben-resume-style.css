@@ -6,30 +6,6 @@ https://www.tooplate.com/view/2120-ben-resume
 
 */
 
-  @font-face {
-      font-family: 'Plain';
-      src: url('../localfonts/Plain-Regular.woff2') format('woff2'),
-          url('../localfonts/Plain-Regular.woff') format('woff');
-      font-weight: normal;
-      font-style: normal;
-  }
-
-  @font-face {
-      font-family: 'Plain';
-      src: url('../localfonts/Plain-Light.woff2') format('woff2'),
-          url('../localfonts/Plain-Light.woff') format('woff');
-      font-weight: 300;
-      font-style: normal;
-  }
-
-  @font-face {
-      font-family: 'Plain';
-      src: url('../localfonts/Plain-Bold.woff2') format('woff2'),
-          url('../localfonts/Plain-Bold.woff') format('woff');
-      font-weight: bold;
-      font-style: normal;
-  }
-
   :root {
     --primary-color:        #ffd500;
     --white-color:          #ffffff;

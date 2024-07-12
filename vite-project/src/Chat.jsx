@@ -91,7 +91,7 @@ function Chat() {
 
                 <form onSubmit={handleFormSubmit} autoComplete="off">
                     <input
-                        for='chatinput'
+                        htmlFor='chatinput'
                         name='chatText'
                         className='chat-text-box'
                         value={chatText}
