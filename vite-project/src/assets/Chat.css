@@ -1,3 +1,4 @@
+/* Chat.css */
 .bubble {
     position: fixed;
     z-index: 1000;
@@ -57,13 +58,26 @@
     position: absolute;
     bottom: 20px;
     left: 20px;
-    right: 20px;
-    min-height: 30px;
+    right: 80px;
+    min-height: 50px;
+    height: 50px;
     font-size: 20px;
     border: none;
     padding: 10px;
     border-radius: 10px;
     box-sizing: border-box;
+    resize: none;
+    overflow: hidden;
+    border-style: solid;
+    border-color: blueviolet;
+    border-width: 5px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.chat-text-box:focus {
+    outline: none;
 }
 
 .chat-response-window {
@@ -104,6 +118,14 @@
     border-top-left-radius: 0;
 }
 
+.chat-submit-button {
+    max-width: 40px;
+    position: absolute;
+    bottom: 28px;
+    right: 28px;
+    cursor: pointer;
+}
+
 @media (max-width: 600px) {
     .chat-window {
         width: 0%;
@@ -125,9 +147,9 @@
     .chat-text-box {
         bottom: 10px;
         left: 10px;
-        right: 10px;
+        right: 80px;
         font-size: 16px;
-        padding: 8px;
+        line-height: 16px;
     }
 
     .chat-response-window {
@@ -141,5 +163,10 @@
     .chat-message {
         font-size: 16px;
         padding: 8px;
+    }
+
+    .chat-submit-button {
+        max-width: 40px;
+        bottom: 15px;
     }
 }

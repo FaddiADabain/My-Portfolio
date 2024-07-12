@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import './assets/Chat.css';
 import chatLogo from './assets/images/chat.png';
+import chatSubmitImage from './assets/images/SubmitButtonImage.png';
 
 const FIREBASE_FUNCTION_URL = 'https://firebase-chatgpt-request-osoadq6u5q-uc.a.run.app/';
 
@@ -9,6 +10,7 @@ function Chat() {
     const [chatText, setChatText] = useState('');
     const [messages, setMessages] = useState([]);
     const chatEndRef = useRef(null);
+    const textAreaRef = useRef(null);
 
     useEffect(() => {
         const initialBotMessage = {
@@ -23,6 +25,10 @@ function Chat() {
         chatEndRef.current?.scrollIntoView({ behavior: 'smooth' });
     }, [messages]);
 
+    useEffect(() => {
+        adjustTextAreaHeight();
+    }, [chatText]);
+
     const toggleMenu = () => {
         setIsOpen(!isOpen);
     };
@@ -33,6 +39,15 @@ function Chat() {
 
     const handleInputChange = (event) => {
         setChatText(event.target.value);
+        adjustTextAreaHeight();
+    };
+
+    const adjustTextAreaHeight = () => {
+        const textArea = textAreaRef.current;
+        if (textArea) {
+            textArea.style.height = 'auto';
+            textArea.style.height = `${textArea.scrollHeight}px`;
+        }
     };
 
     const handleFormSubmit = async (event) => {
@@ -90,14 +105,18 @@ function Chat() {
                 </div>
 
                 <form onSubmit={handleFormSubmit} autoComplete="off">
-                    <input
-                        htmlFor='chatinput'
+                    <textarea
+                        ref={textAreaRef}
                         name='chatText'
                         className='chat-text-box'
                         value={chatText}
                         onChange={handleInputChange}
                         autoComplete="off"
+                        rows="1"
+                        style={{ height: '30px' }} /* Initial height set to 30px */
                     />
+
+                    <img className='chat-submit-button' onClick={handleFormSubmit} src={chatSubmitImage} alt='Send' />
                 </form>
             </div>
         </div>
