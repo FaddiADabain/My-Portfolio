@@ -54,10 +54,10 @@ const TopNav = () => {
                             <a href="#skills" className="nav-link smoothScroll">Skills</a>
                         </li>
                         <li className="nav-item">
-                            <a href="#resume" className="nav-link smoothScroll">Resume</a>
+                            <a href="#projects" className="nav-link smoothScroll">Projects</a>
                         </li>
                         <li className="nav-item">
-                            <a href="#projects" className="nav-link smoothScroll">Projects</a>
+                            <a href="#resume" className="nav-link smoothScroll">Resume</a>
                         </li>
                         <li className="nav-item">
                             <a href="#footer" className="nav-link smoothScroll">Contact</a>
