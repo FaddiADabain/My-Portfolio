@@ -24,7 +24,7 @@
     overflow: hidden;
 }
 
-.project-item:hover {
+.project-item:hover a {
     cursor: pointer;
     transform: scale(1.05);
     z-index: 1;

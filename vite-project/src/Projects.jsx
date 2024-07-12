@@ -24,7 +24,7 @@ const Projects = () => {
                 </div>
             </a>
 
-            <a className='project-item'>
+            <div className='project-item'>
                 <img className='project-picture' src={projectImg2} alt="Project Image 2" />
                 <div className='project-desc'>
                     <b>Noise vs Signal ML</b><br />
@@ -35,7 +35,7 @@ const Projects = () => {
                         ROC curve.
                     </span>
                 </div>
-            </a>
+            </div>
 
             <a href='https://github.com/FaddiADabain/F1Leaderboards' className='project-item'>
                 <img className='project-picture' src={projectImg3} alt="Project Image 3" />
@@ -49,7 +49,7 @@ const Projects = () => {
                 </div>
             </a>
 
-            <a className='project-item'>
+            <div className='project-item'>
                 <img className='project-picture' src={temp1} alt="Project Image 4" />
                 <div className='project-desc'>
                     <b>Discord Bot</b><br />
@@ -59,9 +59,9 @@ const Projects = () => {
                         Implemented commands for music control (play, pause, skip) and queue management.
                     </span>
                 </div>
-            </a>
+            </div>
 
-            <a className='project-item'>
+            <div className='project-item'>
                 <img className='project-picture' src={temp2} alt="Project Image 5" />
                 <div className='project-desc'>
                     <b>F1 Blockchain</b><br />
@@ -72,7 +72,7 @@ const Projects = () => {
                         transparency and authenticity in sports data management.
                     </span>
                 </div>
-            </a>
+            </div>
         </div>
     );
 };
