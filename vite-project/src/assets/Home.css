@@ -149,3 +149,9 @@ body, html {
 .skills-list li {
     margin-bottom: 10px;
 }
+
+@media (min-width:320px){
+    .container,.container-md,.container-sm{
+        max-width: 325px
+    }
+}
