@@ -86,6 +86,13 @@ function Chat() {
         }
     };
 
+    const handleKeyDown = (event) => {
+        if (event.key === 'Enter' && !event.shiftKey) {
+            event.preventDefault();
+            handleFormSubmit(event);
+        }
+    };
+
     return (
         <div className='chat-bubble'>
             <img className={`bubble ${isOpen ? 'open' : ''}`} onClick={toggleMenu} src={chatLogo} alt="Chat Logo" />
@@ -111,9 +118,10 @@ function Chat() {
                         className='chat-text-box'
                         value={chatText}
                         onChange={handleInputChange}
+                        onKeyDown={handleKeyDown}
                         autoComplete="off"
                         rows="1"
-                        style={{ height: '30px' }} /* Initial height set to 30px */
+                        style={{ height: '30px' }}
                     />
 
                     <img className='chat-submit-button' onClick={handleFormSubmit} src={chatSubmitImage} alt='Send' />
