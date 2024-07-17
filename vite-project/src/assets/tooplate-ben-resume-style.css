@@ -103,7 +103,7 @@ https://www.tooplate.com/view/2120-ben-resume
     border-radius: var(--border-radius-medium);
     color: var(--white-color);
     letter-spacing: 0.2px;
-    padding: 6px 36px 10px 36px;
+    padding: 10px 36px;
     font-size: var(--button-font-size);
     white-space: nowrap;
   }
@@ -285,7 +285,7 @@ https://www.tooplate.com/view/2120-ben-resume
     color: var(--white-color);
     display: inline-block;
     margin: 0.5rem 0;
-    padding: 0.5rem 2rem 1.5rem 2rem;
+    padding: 1.5rem 2rem;
 	  font-size: 2.2em;
   }
 
@@ -293,7 +293,7 @@ https://www.tooplate.com/view/2120-ben-resume
     background: var(--primary-color);
     color: var(--dark-color);
     font-size: var(--h4-font-size);
-    padding: 0.5rem 2rem 1rem 2rem;
+    padding: 1rem 2rem;
   }
 
   .email-link:hover {
@@ -485,7 +485,7 @@ https://www.tooplate.com/view/2120-ben-resume
     font-size: var(--p-font-size);
     line-height: 0;
     margin-top: 2.5rem;
-    padding: 1.5rem 1.8rem 1.8rem 1.8rem;
+    padding: 1.8rem;
     white-space: nowrap;
     max-width: 190px;
   }
@@ -556,7 +556,7 @@ https://www.tooplate.com/view/2120-ben-resume
 
     .email-link {
       font-size: 22px;
-      padding: 0.5rem 2rem 0.7rem 2rem;
+      padding: 0.7rem 2rem;
     }
   }
 
@@ -587,6 +587,6 @@ https://www.tooplate.com/view/2120-ben-resume
 
     .email-link {
       font-size: 20px;
-      padding: 0.3rem 2rem 0.6rem 2rem;
+      padding: 0.6rem 2rem;
     }
   }
