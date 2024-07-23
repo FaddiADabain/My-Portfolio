@@ -53,7 +53,7 @@ def read_txt_content(file_path):
 
 # Function to chat with GPT
 def chat_with_gpt(messages):
-    response = client.chat.completions.create(model="gpt-4o", messages=messages)
+    response = client.chat.completions.create(model="gpt-4o-mini", messages=messages)
     return response.choices[0].message.content.strip()
 
 # Route to handle ChatGPT requests
