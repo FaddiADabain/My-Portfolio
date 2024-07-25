@@ -34,7 +34,7 @@ const Home = () => {
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-6 col-md-6 col-12">
-                            <h1 className="mb-4">This is Faddi's Resume</h1>
+                            <h1 className="mb-4 section-headers">This is Faddi's Resume</h1>
                             <p>Hello! I'm Faddi Dabain, a dedicated and innovative Computer Science professional based in 
                                 Ossining, New York. Currently, I am pursuing my Master of Science in Computer Science at Manhattan 
                                 College, where I previously earned my Bachelor of Science degree with a strong academic record and 
@@ -50,7 +50,7 @@ const Home = () => {
                         </div>
                     </div>
                     <hr className="section-divider" />
-                    <h2 className='mb-4'>My Journey</h2>
+                    <h2 className='mb-4 section-headers'>My Journey</h2>
                     <p className='section-text'>
                         My academic journey has been enriched with diverse projects that highlight my technical prowess and creativity. 
                         One of my key projects, MCGardens, is a comprehensive web application that leverages JavaScript, Firebase, and APIs 
@@ -64,14 +64,14 @@ const Home = () => {
                         data analysis, reflecting my passion for Formula One motorsports and my analytical skills.
                     </p>
                     <hr className="section-divider" />
-                    <h2 className='mb-4'>Professional Experience</h2>
+                    <h2 className='mb-4 section-headers'>Professional Experience</h2>
                         <p className='section-text'>
                             As an IT Support Specialist at Manhattan College, I have honed my problem-solving abilities and communication skills. 
                             Working closely with a team of IT professionals, I provided effective solutions to various technology-related issues, 
                             ensuring optimal user experience and seamless IT operations across the campus.
                         </p>
                         <hr className="section-divider" />
-                        <h2 className='mb-4' id='skills'>Technical Skills</h2>
+                        <h2 className='mb-4 section-headers' id='skills'>Technical Skills</h2>
                         <p className='section-text'>
                             I am proficient in a range of programming languages and technologies, including:
                         </p>
@@ -84,14 +84,14 @@ const Home = () => {
                             My technical expertise is complemented by my ability to communicate effectively in English and my limited working proficiency in Arabic.
                         </p>
                         <hr className="section-divider" />
-                        <h2 className='mb-4'>Interests and Hobbies</h2>
+                        <h2 className='mb-4 section-headers'>Interests and Hobbies</h2>
                         <p className='section-text'>
                             Outside the technical realm, I am an avid enthusiast of board games and video games, which have sharpened my strategic 
                             thinking and adaptability. My love for Formula One motorsports has not only fueled my passion for high-speed racing but 
                             also taught me the importance of teamwork and agility in dynamic environments.
                         </p>
                         <hr className="section-divider" />
-                        <h2 className='mb-4'>Let's Connect</h2>
+                        <h2 className='mb-4 section-headers'>Let's Connect</h2>
                         <p className='section-text'>
                             I am always eager to connect with like-minded professionals and explore new opportunities. 
                             Feel free to reach out to me via email at fdabain01@manhattan.edu, or connect with me on LinkedIn and GitHub.

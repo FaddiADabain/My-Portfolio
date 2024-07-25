@@ -1,6 +1,6 @@
 .resume-container {
     width: 90%;
-    margin: 0 auto 0 auto;
+    margin: 0 auto;
     padding: 20px;
     background-color: #f0f0f0;
     border-radius: 10px;
@@ -11,11 +11,16 @@
     align-items: center;
 }
 
+.resume-header {
+    width: 100%;
+    margin: 30px auto;
+    text-align: center;
+}
+
 @media (max-width: 768px) {
     .resume-container {
         width: 100%;
         padding: 10px;
-        margin-top: 75px;
         min-height: 600px;
     }
 }

@@ -126,6 +126,11 @@ body, html {
 .section-title {
     font-size: 2rem;
     margin-top: 40px;
+    text-align: center;
+}
+
+.section-headers {
+    text-align: center;
 }
 
 .section-text {

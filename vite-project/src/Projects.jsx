@@ -9,7 +9,7 @@ import temp2 from './assets/images/Faddi1.png';
 const Projects = () => {
     return (
         <div className='projects-container'>
-            <h2 className='projects-header'>Projects</h2>
+            <h2 className='mb-4 projects-header'>Projects</h2>
 
             <a href='https://mcgardens-bd0b1.web.app/' className='project-item'>
                 <img className='project-picture' src={projectImg1} alt="Project Image 1" />
