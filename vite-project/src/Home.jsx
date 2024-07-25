@@ -34,7 +34,7 @@ const Home = () => {
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-6 col-md-6 col-12">
-                            <h1 className="mb-4 section-headers">This is Faddi's Resume</h1>
+                            <h1 className="mb-4 section-headers">This is Faddi's Portfolio</h1>
                             <p>Hello! I'm Faddi Dabain, a dedicated and innovative Computer Science professional based in 
                                 Ossining, New York. Currently, I am pursuing my Master of Science in Computer Science at Manhattan 
                                 College, where I previously earned my Bachelor of Science degree with a strong academic record and 
