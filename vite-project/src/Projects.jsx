@@ -11,7 +11,7 @@ const Projects = () => {
         <div className='projects-container'>
             <h2 className='mb-4 projects-header'>Projects</h2>
 
-            <a href='https://mcgardens-bd0b1.web.app/' className='project-item'>
+            <a href='https://mcgardens-bd0b1.web.app/' target="_blank" className='project-item'>
                 <img className='project-picture' src={projectImg1} alt="Project Image 1" />
                 <div className='project-desc'>
                     <b>MCGardens</b><br />
@@ -37,7 +37,7 @@ const Projects = () => {
                 </div>
             </div>
 
-            <a href='https://github.com/FaddiADabain/F1Leaderboards' className='project-item'>
+            <a href='https://github.com/FaddiADabain/F1Leaderboards' target="_blank" className='project-item'>
                 <img className='project-picture' src={projectImg3} alt="Project Image 3" />
                 <div className='project-desc'>
                     <b>F1 Leaderboards</b><br />

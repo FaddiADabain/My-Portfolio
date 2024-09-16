@@ -1,5 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import './assets/TopNav.css';
+import gitIcon from './assets/images/github.png';
+import emailIcon from './assets/images/email.png';
+import linkedinIcon from './assets/images/linkedin.png';
 
 const TopNav = () => {
     const [menuActive, setMenuActive] = useState(false);
@@ -27,7 +30,7 @@ const TopNav = () => {
     return (
         <nav className={`navbar navbar-expand-lg ${scroll ? 'scroll' : ''}`}>
             <div className="container">
-                <a className="navbar-brand" href="#">
+                <a className="navbar-brand" href="">
                     Faddi's Portfolio
                 </a>
 
@@ -59,8 +62,20 @@ const TopNav = () => {
                         <li className="nav-item">
                             <a href="#resume" className="nav-link smoothScroll">Resume</a>
                         </li>
-                        <li className="nav-item">
-                            <a href="#footer" className="nav-link smoothScroll">Contact</a>
+                        <li>
+                            <a href="https://www.linkedin.com/in/faddi-dabain-556698171/" target="_blank" className="nav-link smoothScroll">
+                                <img className='lets-connect' src={linkedinIcon} alt='LinkedIn' />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/FaddiADabain" target="_blank" className="nav-link smoothScroll">
+                                <img className='lets-connect' src={gitIcon} alt='LinkedIn' />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:fdabain01@manhattan.edu" target="_blank" className="nav-link smoothScroll">
+                                <img className='lets-connect' src={emailIcon} alt='LinkedIn' />
+                            </a>
                         </li>
                     </ul>
                 </div>
