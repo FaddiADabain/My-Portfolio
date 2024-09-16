@@ -64,6 +64,10 @@ body, html {
     color: #fff;
     padding-bottom: 0.5rem;
     animation: bounce 2s infinite;
+    user-select: none;         /* Stops user from interating */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
 }
 
 @keyframes bounce {
