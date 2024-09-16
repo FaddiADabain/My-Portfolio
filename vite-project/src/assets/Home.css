@@ -2,7 +2,6 @@
 body, html {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
 }
 
 /* Backdrop */
@@ -31,6 +30,10 @@ body, html {
     text-align: center;
 }
 
+.container {
+    padding: 0 15px;
+}
+
 .hero .container {
     height: 100%;
     display: flex;
@@ -52,21 +55,30 @@ body, html {
     color: black;
     text-decoration: none;
     font-size: 1.2rem;
+    font-weight: 500;
 }
 
 .hero .arrow {
-    position: absolute;
-    bottom: 20px;
+    position: relative;
     font-size: 2rem;
     color: #fff;
+    padding-bottom: 0.5rem;
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
 }
 
 /* About Section */
-.about {
-    padding: 60px 0;
-    background: #fff;
-}
-
 .about .container {
     display: flex;
     flex-direction: column;
@@ -98,11 +110,6 @@ body, html {
     height: auto;
 }
 
-/* Section Padding */
-.section-padding {
-    padding: 60px 0;
-}
-
 /* About Third Section */
 .about-third {
     margin-top: 40px;
@@ -130,13 +137,24 @@ body, html {
 }
 
 .section-headers {
-    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+.experience-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #046A38;
+    margin-bottom: 1rem;
+    align-self: normal;
+    line-height: 1.6;
 }
 
 .section-text {
     font-size: 1rem;
-    line-height: 1.5;
-    margin-bottom: 20px;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
 }
 
 .section-divider {
@@ -148,15 +166,38 @@ body, html {
 .skills-list {
     list-style: none;
     padding: 0;
-    margin: 20px 0;
 }
 
 .skills-list li {
     margin-bottom: 10px;
+    position: relative;
+    padding-left: 20px;
 }
+
+.skills-list li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: #046A38;
+}
+
 
 @media (min-width:320px){
     .container,.container-md,.container-sm{
         max-width: 325px
+    }
+}
+
+@media (max-width: 767px) {
+    .section-headers {
+        font-size: 1.5rem;
+    }
+
+    .experience-title {
+        font-size: 1.25rem;
+    }
+
+    .section-text {
+        font-size: 0.95rem;
     }
 }
