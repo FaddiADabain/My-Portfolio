@@ -2,21 +2,14 @@
 
 Welcome to the repository for my personal portfolio website. This project showcases my skills, projects, and professional experience as a Computer Science student and IT Support Specialist.
 
-![Website Preview](./vite-project/src/assets/images/SitePreview.png)
-*Preview of the portfolio website.*
+[<img src="./vite-project/src/assets/images/SitePreview.png">](https://dabainfolio.web.app/)
 
 ## Table of Contents
 
 - [About the Project](#about-the-project)
   - [Built With](#built-with)
-- [Getting Started](#getting-started)
-  - [Prerequisites](#prerequisites)
-  - [Installation](#installation)
-- [Usage](#usage)
 - [Features](#features)
-- [Screenshots](#screenshots)
 - [Contact](#contact)
-- [Acknowledgments](#acknowledgments)
 
 ## About the Project
 
@@ -24,24 +17,19 @@ This portfolio website is a single-page application developed using React. It pr
 
 ### Built With
 
-- [React](https://reactjs.org/)
-- [JavaScript](https://www.javascript.com/)
-- [HTML5](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5)
-- [CSS3](https://developer.mozilla.org/en-US/docs/Web/CSS)
-- [Bootstrap](https://getbootstrap.com/) (if applicable)
+- React
+- JavaScript
+- HTML
+- CSS
+- Python
 
-## Getting Started
+## Features
 
-To get a local copy up and running, follow these steps.
+Located at the bottom right of the website at all times is a chat button. When pressed a chat box appears where you can input an query about me and OpenAI's ChatGPT will respond on my behalf.
 
-### Prerequisites
+## Contact
 
-- **Node.js** (v14 or higher)
-- **npm** or **yarn** package manager
-
-### Installation
-
-1. **Clone the repository:**
-
-   ```bash
-   git clone https://github.com/yourusername/portfolio-website.git
+[fdabain01@manhattan.edu](mailto:fdabain01@manhattan.edu)
+[dottycr02@gmail.com](mailto:dottycr02@gmail.com)
+[+1(914)689-6900](tel:+19146896900)
+[LinkedIn](https://www.linkedin.com/in/faddi-dabain-556698171/)
