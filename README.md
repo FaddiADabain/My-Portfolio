@@ -2,7 +2,7 @@
 
 Welcome to the repository for my personal portfolio website. This project showcases my skills, projects, and professional experience as a Computer Science student and IT Support Specialist.
 
-[<img target="_blank" src="./vite-project/src/assets/images/SitePreview.png">](https://dabainfolio.web.app/)
+[<a href='https://dabainfolio.web.app/' target="_blank"><img src="./vite-project/src/assets/images/SitePreview.png"></a>](https://dabainfolio.web.app/)
 
 ## Table of Contents
 
