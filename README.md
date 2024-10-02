@@ -1,6 +1,6 @@
 # Portfolio Website - Faddi Dabain
 
-Welcome to the repository for my personal portfolio website. This project showcases my skills, projects, and professional experience as a Computer Science student and IT Support Specialist.
+Welcome to the repository for my personal portfolio website. This project showcases my skills, projects, and professional experience as a Computer Science student.
 
 [<img src="./vite-project/src/assets/images/SitePreview.png">](https://dabainfolio.web.app/)
 *Click on the preview above to visit my portfolio*
