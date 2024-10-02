@@ -2,7 +2,7 @@
 
 Welcome to the repository for my personal portfolio website. This project showcases my skills, projects, and professional experience as a Computer Science student and IT Support Specialist.
 
-![Website Preview](./assets/images/website-preview.png)
+![Website Preview](./vite-project/src/assets/images/SitePreview.png)
 *Preview of the portfolio website.*
 
 ## Table of Contents
