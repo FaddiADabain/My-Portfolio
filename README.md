@@ -30,7 +30,7 @@ Located at the bottom right of the website at all times is a chat button. When p
 
 ## Contact
 
-[fdabain01@manhattan.edu](mailto:fdabain01@manhattan.edu)
-[dottycr02@gmail.com](mailto:dottycr02@gmail.com)
-[+1(914)689-6900](tel:+19146896900)
-[LinkedIn](https://www.linkedin.com/in/faddi-dabain-556698171/)
+- [fdabain01@manhattan.edu](mailto:fdabain01@manhattan.edu)
+- [dottycr02@gmail.com](mailto:dottycr02@gmail.com)
+- [+1(914)689-6900](tel:+19146896900)
+- [LinkedIn](https://www.linkedin.com/in/faddi-dabain-556698171/)
