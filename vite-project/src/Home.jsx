@@ -19,7 +19,7 @@ const Home = () => {
                         <div className="d-flex flex-column justify-content-center align-items-center col-lg-7 col-md-7 col-12">
                             <div className="hero-text">
                                 <h1 className="hero-title">Faddi Dabain, a computer science student</h1>
-                                <a href="mailto:fdabain01@manhattan.edu" className="email-link">fdabain01@manhattan.edu</a>
+                                <a href="mailto:dabainfaddi@google.com" className="email-link">dabainfaddi@google.com</a>
                             </div>
                         </div>
                     </div>
@@ -42,8 +42,8 @@ const Home = () => {
                                 notable scholarships, including the Science Scholar's Award and Founder's Award.
                             </p>
                             <ul className="mt-4 mb-5 mb-lg-0 profile-list list-unstyled">
-                                <li><strong>Full Name:</strong> Faddi Azzam Dabain</li>
-                                <li><strong>Email:</strong> fdabain01@manhattan.edu</li>
+                                <li><strong>Full Name:</strong>Faddi Azzam Dabain</li>
+                                <li><strong>Email:</strong>dabainfaddi@google.com</li>
                             </ul>
                         </div>
                         <div className="col-lg-5 mx-auto col-md-6 col-12">
@@ -75,11 +75,16 @@ const Home = () => {
                 <div className="container">
                     <hr className="section-divider" />
                     <h2 className='mb-4 section-headers' title='Professional Experience'>Professional Experience</h2>
-                    <p className='experience-title'>
-                        Information Technology Support Specialist, Manhattan College
-                    </p>
+                    <div className="experience-entry">
+                        <p className='experience-title'>
+                            Information Technology Support Specialist, Manhattan University
+                        </p>
+                        <p className='experience-date'>
+                            Aug 2022 - May 2024
+                        </p>
+                    </div>
                     <p className='section-text'>
-                        As an IT Support Specialist at Manhattan College, I dedicated myself to resolving a wide range of 
+                        As an IT Support Specialist at Manhattan University, I dedicated myself to resolving a wide range of 
                         technical issues for students, faculty, and staff. Leveraging strong problem-solving abilities and 
                         excellent communication skills, I provided timely and effective solutions to hardware and software 
                         problems, network connectivity issues, and other technology-related challenges. Collaborating closely 
@@ -101,7 +106,7 @@ const Home = () => {
                         in the class. This experience solidified my decision to pursue computer science as a career path.
                     </p>
                     <p className='section-text'>
-                        I earned my B.S. in Computer Science from Manhattan College, where I honed my skills in programming, data 
+                        I earned my B.S. in Computer Science from Manhattan University, where I honed my skills in programming, data 
                         analysis, and software engineering. Currently, I am further expanding my expertise by pursuing an M.S. in 
                         Computer Science, set to graduate in 2025. My academic journey has equipped me with a strong foundation in 
                         various technologies and a keen ability to tackle complex problems.

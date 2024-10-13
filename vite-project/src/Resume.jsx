@@ -1,5 +1,5 @@
 import React from 'react';
-import resumePdf from './assets/Faddi Azzam Dabain Resume.pdf';
+import resumePdf from './assets/Resume Computer Science 10_13_24.pdf';
 import './assets/Resume.css';
 
 const Resume = () => {

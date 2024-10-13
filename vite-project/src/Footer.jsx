@@ -6,7 +6,7 @@ function Footer() {
     <footer className="footer" id='footer'>
       <div className="footer-content">
         <div className="contact-info footer-item">
-          <a href="mailto:fdabain01@manhattan.edu" className="footer-link">Email</a>
+          <a href="mailto:dabainfaddi@google.com" className="footer-link">Email</a>
           <a href="tel:+19146896900" className="footer-link">Phone: (914) 689-6900</a>
         </div>
         <div className="social-media footer-item">

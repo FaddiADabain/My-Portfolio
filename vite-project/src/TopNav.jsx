@@ -62,17 +62,17 @@ const TopNav = () => {
                         <li className="nav-item">
                             <a href="#resume" className="nav-link smoothScroll">Resume</a>
                         </li>
-                        <li>
+                        <li className="nav-item">
                             <a href="https://www.linkedin.com/in/faddi-dabain-556698171/" target="_blank" className="nav-link smoothScroll">
                                 <img className='lets-connect' src={linkedinIcon} alt='LinkedIn' />
                             </a>
                         </li>
-                        <li>
+                        <li className="nav-item">
                             <a href="https://github.com/FaddiADabain" target="_blank" className="nav-link smoothScroll">
                                 <img className='lets-connect' src={gitIcon} alt='LinkedIn' />
                             </a>
                         </li>
-                        <li>
+                        <li className="nav-item">
                             <a href="mailto:fdabain01@manhattan.edu" target="_blank" className="nav-link smoothScroll">
                                 <img className='lets-connect' src={emailIcon} alt='LinkedIn' />
                             </a>

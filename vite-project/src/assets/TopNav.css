@@ -23,6 +23,10 @@
   font-size: var(--h4-font-size);
 }
 
+.navbar-brand:hover {
+  color: var(--primary-color);
+}
+
 .navbar .custom-btn {
   background: var(--primary-color);
   color: var(--dark-color);
