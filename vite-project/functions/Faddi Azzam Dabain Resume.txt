@@ -1,7 +1,7 @@
 Resume:
 
 Faddi Azzam Dabain
-Ossining, NY | (914)689-6900 | fdabain01@manhattan.edu | Linkedin | Github
+Ossining, NY | (914)689-6900 | dabainfaddi@google.com | Linkedin | Github
 EDUCATION Manhattan College
 Bachelor of Science in Computer Science
 Manhattan College
@@ -31,7 +31,72 @@ Created a feature-rich Discord bot to enhance server interaction and entertainme
 Integrated YouTube API for playing music and Spotify API for fetching and playing tracks within the server. Implemented commands for music control (play, pause, skip) and queue management.
 WORK EXPERIENCE
 Manhattan College Riverdale, NY
-IT Support Specialist Sep 2022 - May 2024
+IT Support Specialist Aug 2022 - May 2024 (I no longer work here.)
 Collaborated with a team of IT professionals to swiftly resolve technical issues and provide support for hardware malfunctions in over 100 classrooms, resulting in a 90% decrease in downtime for teachers and students. Enhanced the user experience by conducting insightful troubleshooting and diagnosing hardware, software, and network-related problems.
 SKILLS & INTERESTS
 Skills: Java, C/C++, SQL, Bash, LUA, Python, JavaScript, HTML, CSS Interests: Board games and video games, Formula One Motorsports Enthusiast
+
+
+Here is my new Resume:
+FADDI DABAIN
+806 Pinesbridge Road, Ossining, NY 10562 Contact: (914) 689-6900; dabainfaddi@gmail.com
+PROFILE
+Passionate and results-driven aspiring software engineer with a strong foundation in computer science. Completing a Master of Science
+in Computer Science at Manhattan University, where I also earned my Bachelor's degree. Proficient in Python, Java, C++, JavaScript,
+Node.js, SQL, V ite, HTML, and API integration. Recognized for developing innovative projects like dynamic platforms and neural
+network classifiers. Committed to leveraging technical expertise in software engineering, backend development, data analysis, and
+AI/ML engineering. Adept at problem-solving and dedicated to delivering impactful software solutions that enhance user experience.
+CORE COMPETENCIES
+Strong Project Management ♦ Keen Attention to Detail ♦ Great Communicator ♦ Tech-Savvy ♦ Problem Solver ♦
+Team-Oriented ♦ Natural Leader ♦ Inclusive ♦ Warm, Professional Demeanor ♦ Exceptional Work Ethic ♦ Adaptable
+EDUCATION & HONORS
+Manhattan University B.S. Computer Science , Received May 2024.
+Cum. GPA: 3.4/4.0.
+Manhattan University M.S. Computer Science , Anticipated Graduation May 2025.
+Cum. GPA: 3.4/4.0.
+P ROJE CT E XPE RIE NCE
+MCGardens ; JavaScript, CSS, Firebase, OpenAI API, Unsplash API, Nodemailer Jan 2024 – May 2024
+●
+Developed a comprehensive web application facilitating user interaction with dynamic content on plants, weather, and events
+using Agile Methodology
+●
+Implemented responsive design principles to ensure seamless user experience across desktops, tablets, and mobile devices,
+enhancing user interface (UI) and user experience (UX).
+●
+Implemented user authentication and data encryption using Firebase; created API calls to OpenAI for plant care information and to
+Unsplash for images.
+●
+Applied Agile methodologies and used Git for version control to manage project development, collaborate effectively, and iterate
+based on user feedback.
+Formula1 Racing Leaderboards ; Python, SQL Aug 2023 – Dec 2023
+●
+Led the development of a dynamic Formula1 Leaderboard Database system using Python and SQL, delivering detailed historical F1
+race data to users.
+●
+Designed and implemented intuitive GUIs for data visualization, enhancing the user experience (UX) and enabling in-depth race data analysis.
+●
+Developed robust SQL databases and efficient data processing algorithms for quick retrieval of extensive datasets, including leaderboards, driver statistics, team statistics, and tire strategies.
+●
+Visualized tire strategies and updated points standings, offering insights into race tactics and contributing to performance analysis.
+Neural Network for Signal vs. Noise Detection ;Python, NumPy, Pandas Jan 2024 – May 2024
+●
+Developed a two-layer neural network using Python, NumPy, and Pandas to classify signal and noise in complex datasets.
+●
+Implemented hidden and output layers, optimized through backpropagation and the sigmoid activation function, enhancing model precision.
+●
+Trained and validated the network on extensive datasets, achieving high classification accuracy and robust performance metrics.
+●
+Evaluated and refined model performance using Mean Squared Error (MSE) and Receiver Operating Characteristic (ROC) curves, leading to significant improvements in detection capabilities.
+Discord Bot Development; Python, Discord API, YouTube API, Spotify API May 2023 – Present
+●
+Developed a feature-rich Discord bot using Python, enhancing server interaction and entertainment for users.
+●
+Integrated Y ouTube and Spotify APIs to enable music playback within the server, including fetching and playing tracks.
+●
+Implemented commands for comprehensive music control (play, pause, skip) and queue management, improving user experience.
+●
+Enhanced server functionality with additional interactive features, fostering community engagement and participation.
+TECHNICAL SKILLS
+Proficient in Java, C/C++, Python, JavaScript, SQL, Bash, LUA, HTML, CSS, React Native, API Integration
+TECHNOLOGY
+Proficient in Microsoft Office (Word, Excel, PowerPoint), Mac OS,Windows, Linux

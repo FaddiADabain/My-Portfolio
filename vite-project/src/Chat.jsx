@@ -15,7 +15,7 @@ function Chat() {
     useEffect(() => {
         const initialBotMessage = {
             text: 'I am ChatGPT! I will be answering any questions you have about Faddi today. ' +
-                'If you need any personal responses please feel free to email me at: fdabain01@manhattan.edu.',
+                'If you need any personal responses please feel free to email me at: dabainfaddi@google.com',
             sender: 'bot'
         };
         setMessages([initialBotMessage]);
