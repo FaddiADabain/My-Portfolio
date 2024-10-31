@@ -73,7 +73,7 @@ const TopNav = () => {
                             </a>
                         </li>
                         <li className="nav-item">
-                            <a href="mailto:fdabain01@manhattan.edu" target="_blank" className="nav-link smoothScroll">
+                            <a href="mailto:dabainfaddi@gmail.com" target="_blank" className="nav-link smoothScroll">
                                 <img className='lets-connect' src={emailIcon} alt='LinkedIn' />
                             </a>
                         </li>
