@@ -13,7 +13,7 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '18' # Use Node.js version 18 or higher
+          node-version: '20'
 
       - name: Copy and modify package.json
         run: |
