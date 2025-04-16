@@ -14,7 +14,7 @@ const Home = () => {
                 <div className="container">
                     <div className="row">
                         <div className="mx-auto col-lg-5 col-md-5 col-10">
-                            <img src={defaultImg} className="img-fluid" alt="Faddi Azzam Dabain" />
+                            <img src={defaultImg} className="img-fluid" alt="Faddi Dabain" />
                         </div>
                         <div className="d-flex flex-column justify-content-center align-items-center col-lg-7 col-md-7 col-12">
                             <div className="hero-text">
@@ -42,12 +42,12 @@ const Home = () => {
                                 notable scholarships, including the Science Scholar's Award and Founder's Award.
                             </p>
                             <ul className="mt-4 mb-5 mb-lg-0 profile-list list-unstyled">
-                                <li><strong>Full Name:</strong>Faddi Azzam Dabain</li>
+                                <li><strong>Full Name:</strong>Faddi Dabain</li>
                                 <li><strong>Email:</strong>dabainfaddi@google.com</li>
                             </ul>
                         </div>
                         <div className="col-lg-5 mx-auto col-md-6 col-12">
-                            <img src={gradPic} className="img-fluid" alt="Faddi Azzam Dabain" />
+                            <img src={gradPic} className="img-fluid" alt="Faddi Dabain" />
                         </div>
                     </div>
                     <hr className="section-divider" />
