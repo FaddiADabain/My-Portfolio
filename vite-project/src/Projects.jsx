@@ -37,8 +37,20 @@ const Projects = () => {
                 </div>
             </a>
 
+            <a href='https://github.com/FaddiADabain/MLAIChessBot' target="_blank" className='project-item'>
+                <img className='project-picture' src={temp2} alt="Project Image 3" />
+                <div className='project-desc'>
+                    <b>Self Learning Chess AI</b><br />
+                    <span className='project-desc-txt'>
+                        This Python project is a self-learning chess AI modeled after Google's AlphaZero, using reinforcement learning and deep 
+                        neural networks to analyze and evaluate board positions. It continuously refines its strategies through self-play, 
+                        enabling it to master complex chess tactics without human input.
+                    </span>
+                </div>
+            </a>
+
             <a href='https://github.com/FaddiADabain/F1Leaderboards' target="_blank" className='project-item'>
-                <img className='project-picture' src={projectImg3} alt="Project Image 3" />
+                <img className='project-picture' src={projectImg3} alt="Project Image 4" />
                 <div className='project-desc'>
                     <b>F1 Leaderboards</b><br />
                     <span className='project-desc-txt'>
@@ -50,7 +62,7 @@ const Projects = () => {
             </a>
 
             <a href='https://github.com/FaddiADabain' target="_blank" className='project-item'>
-                <img className='project-picture' src={temp1} alt="Project Image 4" />
+                <img className='project-picture' src={temp1} alt="Project Image 5" />
                 <div className='project-desc'>
                     <b>Discord Bot</b><br />
                     <span className='project-desc-txt'>
@@ -62,7 +74,7 @@ const Projects = () => {
             </a>
 
             <a href='https://github.com/FaddiADabain/F1Blockchain' target="_blank" className='project-item'>
-                <img className='project-picture' src={temp2} alt="Project Image 5" />
+                <img className='project-picture' src={temp2} alt="Project Image 6" />
                 <div className='project-desc'>
                     <b>F1 Blockchain</b><br />
                     <span className='project-desc-txt'>
