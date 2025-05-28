@@ -64,17 +64,34 @@ const Home = () => {
                         My technical expertise is complemented by my ability to communicate effectively in English and my limited working proficiency in Arabic.
                     </p>
                     <hr className="section-divider" />
-                </div>
-            </section>
-
-            <section id='projects'>
-                <Projects />
-            </section>
-
-            <section className='about' id="about">
-                <div className="container">
-                    <hr className="section-divider" />
-                    <h2 className='mb-4 section-headers' title='Professional Experience'>Professional Experience</h2>
+                    <h2 className='mb-4 section-headers' id='experience' title='Professional Experience'>Professional Experience</h2>
+                    <div className="experience-entry">
+                        <p className='experience-title'>
+                            Full Stack Web Developer, JFL Fuel Corp.
+                        </p>
+                        <p className='experience-date'>
+                            May 2025 - Present
+                        </p>
+                    </div>
+                    <p className='section-text'>
+                        <li className='experience-list-item'>Architected and launched a fully responsive React/Node.js/MongoDB web app, 
+                        deployed on AWS EC2 with S3 and CloudFront for fast asset delivery; boosted user engagement by 60% and maintained 
+                        99.9% uptime.</li>
+                        <li className='experience-list-item'>Integrated a live fuel-price REST API and built a Stripe-powered e-commerce 
+                        module for store pre-orders, automating pricing updates and generating over $1.5K in monthly revenue.</li>
+                        <li className='experience-list-item'>Developed a custom React-based admin dashboard with Express endpoints and 
+                        Chart.js visualizations, enabling managers to update promotions, track inventory, and analyze customer behavior; 
+                        cut update processing time by 80%.</li>
+                        <li className='experience-list-item'>Implemented SEO best practices—including semantic HTML, meta tags, and Google 
+                        Analytics event tracking—to improve local search rankings, drive a 50% increase in organic traffic, and reduce bounce 
+                        rate by 30%.</li>
+                        <li className='experience-list-item'>Established CI/CD pipelines with GitHub Actions and Docker for automated testing 
+                        (Jest unit tests, Cypress end-to-end tests) and seamless deployments, enhancing code quality and accelerating release 
+                        cycles by 40%.</li>
+                        <li className='experience-list-item'>Collaborated directly with station owners to gather requirements, wrote 
+                        technical documentation, and trained staff on CMS usage and analytics interpretation, improving operational 
+                        efficiency and ensuring long-term maintainability.</li>
+                    </p>
                     <div className="experience-entry">
                         <p className='experience-title'>
                             Information Technology Support Specialist, Manhattan University
@@ -92,6 +109,16 @@ const Home = () => {
                         This role not only enhanced my technical expertise but also strengthened my ability to assist users 
                         with patience and professionalism, ensuring a positive user experience in a dynamic academic environment.
                     </p>
+                    <hr className="section-divider" />
+                </div>
+            </section>
+
+            <section id='projects'>
+                <Projects />
+            </section>
+
+            <section className='about' id="about">
+                <div className="container">
                     <hr className="section-divider" />
                     <h2 className='mb-4 section-headers' title='My Journey'>My Journey</h2>
                     <p className='section-text'>

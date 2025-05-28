@@ -54,7 +54,7 @@ const TopNav = () => {
                             <a href="#about" className="nav-link smoothScroll">About Me</a>
                         </li>
                         <li className="nav-item">
-                            <a href="#skills" className="nav-link smoothScroll">Skills</a>
+                            <a href="#experience" className="nav-link smoothScroll">Experience</a>
                         </li>
                         <li className="nav-item">
                             <a href="#projects" className="nav-link smoothScroll">Projects</a>

@@ -174,6 +174,16 @@ body, html {
     text-align: right;
 }
 
+.experience-list-item {
+    list-style: disc;
+    list-style-position: inside;
+    color: inherit;
+}
+
+.experience-list-item::marker {
+    color: #046A38;
+}
+
 .section-text {
     font-size: 1rem;
     line-height: 1.6;
