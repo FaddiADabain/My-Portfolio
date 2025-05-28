@@ -1,4 +1,3 @@
-import React from 'react';
 import './assets/Home.css';
 import defaultImg from './assets/images/Selfie.jpeg';
 import gradPic from './assets/images/Selfie1.png';
