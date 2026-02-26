@@ -17,7 +17,7 @@ const Home = () => {
                         </div>
                         <div className="d-flex flex-column justify-content-center align-items-center col-lg-7 col-md-7 col-12">
                             <div className="hero-text">
-                                <h1 className="hero-title">Faddi Dabain, a computer science student</h1>
+                                <h1 className="hero-title">Faddi Dabain,<br />Computer Science Graduate</h1>
                                 <a href="mailto:dabainfaddi@google.com" className="email-link">dabainfaddi@google.com</a>
                             </div>
                         </div>
@@ -66,18 +66,16 @@ const Home = () => {
                     <h2 className='mb-4 section-headers' id='experience' title='Professional Experience'>Professional Experience</h2>
                     <div className="experience-entry">
                         <p className='experience-title'>
-                            Full Stack Web Developer, JFL Fuel Corp.
+                            Full Stack Web Developer, <em>JFL Fuel Corp.</em>
                         </p>
                         <p className='experience-date'>
-                            May 2025 - Present
+                            May 2025 - Sep 2025
                         </p>
                     </div>
                     <p className='section-text'>
-                        <li className='experience-list-item'>Architected and launched a fully responsive React/Node.js/MongoDB web app, 
-                        deployed on AWS EC2 with S3 and CloudFront for fast asset delivery; boosted user engagement by 60% and maintained 
+                        <li className='experience-list-item'>Architected and launched a fully responsive React/Node.js web app, 
+                        deployed on Firebase for fast asset delivery; boosted user engagement by 60% and maintained 
                         99.9% uptime.</li>
-                        <li className='experience-list-item'>Integrated a live fuel-price REST API and built a Stripe-powered e-commerce 
-                        module for store pre-orders, automating pricing updates and generating over $1.5K in monthly revenue.</li>
                         <li className='experience-list-item'>Developed a custom React-based admin dashboard with Express endpoints and 
                         Chart.js visualizations, enabling managers to update promotions, track inventory, and analyze customer behavior; 
                         cut update processing time by 80%.</li>
@@ -93,20 +91,25 @@ const Home = () => {
                     </p>
                     <div className="experience-entry">
                         <p className='experience-title'>
-                            Information Technology Support Specialist, Manhattan University
+                            Information Technology Support Specialist, <em>Manhattan University</em>
                         </p>
                         <p className='experience-date'>
                             Aug 2022 - May 2024
                         </p>
                     </div>
                     <p className='section-text'>
-                        As an IT Support Specialist at Manhattan University, I dedicated myself to resolving a wide range of 
-                        technical issues for students, faculty, and staff. Leveraging strong problem-solving abilities and 
-                        excellent communication skills, I provided timely and effective solutions to hardware and software 
-                        problems, network connectivity issues, and other technology-related challenges. Collaborating closely 
-                        with a team of IT professionals, I contributed to maintaining seamless IT operations across the campus. 
-                        This role not only enhanced my technical expertise but also strengthened my ability to assist users 
-                        with patience and professionalism, ensuring a positive user experience in a dynamic academic environment.
+                        <li className='experience-list-item'>
+                            As an IT Support Specialist at Manhattan University, I dedicated myself 
+                            to resolving a wide range of technical issues for students, faculty, and staff. Leveraging strong 
+                            problem-solving abilities and excellent communication skills, I provided timely and effective solutions to 
+                            hardware and software problems, network connectivity issues, and other technology-related challenges.
+                            </li>
+                        <li className='experience-list-item'>
+                            Collaborating closely 
+                            with a team of IT professionals, I contributed to maintaining seamless IT operations across the campus. 
+                            This role not only enhanced my technical expertise but also strengthened my ability to assist users 
+                            with patience and professionalism, ensuring a positive user experience in a dynamic academic environment.
+                            </li>
                     </p>
                     <hr className="section-divider" />
                 </div>
@@ -133,8 +136,8 @@ const Home = () => {
                     </p>
                     <p className='section-text'>
                         I earned my B.S. in Computer Science from Manhattan University, where I honed my skills in programming, data 
-                        analysis, and software engineering. Currently, I am further expanding my expertise by pursuing an M.S. in 
-                        Computer Science, set to graduate in 2025. My academic journey has equipped me with a strong foundation in 
+                        analysis, and software engineering. I have expanded my expertise by pursuing an M.S. in 
+                        Computer Science, graduated in May 2025. My academic journey has equipped me with a strong foundation in 
                         various technologies and a keen ability to tackle complex problems.
                     </p>
                     <p className='section-text'>
